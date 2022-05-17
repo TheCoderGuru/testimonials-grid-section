@@ -1,12 +1,10 @@
-
 $moderate-violet: hsl(263, 55%, 52%);
 $very-dark-grayish-blue: hsl(217, 19%, 35%);
 $very-dark-blackish-blue: hsl(219, 29%, 14%);
 $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 81%);
-$font-body: 'Barlow Condensed', sans-serif;
+$font-body: "Barlow Condensed", sans-serif;
 $light-grayish-blue: hsl(210, 46%, 95%);
-
 
 * {
   padding: 0;
@@ -19,6 +17,7 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 
 body {
   min-height: 100%;
+  background-color: $light-grayish-blue;
 }
 
 .cards {
@@ -27,11 +26,13 @@ body {
 }
 
 .card {
-    margin-inline: 2em;
-    border-radius: .6em;
-    width: fit-content;
-    position: relative;
-    margin-block-start: 5em;
+  margin-inline: 2em;
+  border-radius: 0.6em;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-block-start: 5em;
   &__flex {
     display: flex;
     gap: 1em;
@@ -50,49 +51,97 @@ body {
   &__name {
     color: white;
     font-size: 1em;
-
+    font-weight: 500;
   }
 
-  &__position{
-      color: $light-grayish-blue;
+  &__position {
+    color: $light-grayish-blue;
   }
 
-  &__heading{
-      margin-inline-start: 1.5em;
-      margin-block-start: 1.2em;
-      color: $white;
-      position: relative;
-      z-index: 1;
-      font-size: 1.54em;
-      padding-inline-end: 4em;
-      font-weight: 500;
+  &__heading {
+    margin-inline-start: 1.5em;
+    margin-block-start: 1.2em;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    font-size: 1.54em;
+    padding-inline-end: 4em;
+    font-weight: 500;
   }
 
-  &__quotation{
-      position: absolute;
-      right: 2em;
-      top: 0;
+  &__quotation {
+    position: absolute;
+    right: 3em;
+    top: 0;
   }
 
-  &__description{
-      margin-inline-start: 2em;
-      margin-block-start: 1em;
-      margin-block-end: 2em;
-      margin-inline-end: 10em;
-      color: $light-gray;
-
+  &__description {
+    margin-inline-start: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
+    margin-inline-end: 10em;
+    color: $light-gray;
   }
 }
 
-
-.violet{
+.violet {
   background-color: $moderate-violet;
 }
 
-.dark-gray{
+.dark-gray {
   background-color: $very-dark-grayish-blue;
 }
 
-.dark-black{
+.dark-black {
   background-color: $very-dark-blackish-blue;
+}
+
+.white {
+  background-color: $white;
+}
+
+.font-violet {
+  color: $moderate-violet;
+}
+
+.font-dark-gray {
+  color: $very-dark-grayish-blue;
+}
+
+.font-light-gray {
+  color: $light-gray;
+}
+
+.font-light-grayish-blue {
+  color: $light-grayish-blue;
+}
+
+.font-dark-black {
+  color: $very-dark-blackish-blue;
+}
+
+.font-white {
+  color: $white;
+}
+
+@media only screen and (min-width: 1440px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4fr, .7fr);
+  }
+  .one{
+    grid-column: span 2;
+  }
+
+  .three{
+    grid-column: 1 / 2;
+  }
+
+  .four{
+    grid-column: span 2;
+  }
+
+  .five{
+    grid-column: 4;
+  }
 }
