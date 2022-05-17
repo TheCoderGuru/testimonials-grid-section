@@ -22,7 +22,6 @@ body {
   width: fit-content;
   position: relative;
   margin-block-start: 5em;
-  background-color: hsl(263deg, 55%, 52%);
 }
 .card__flex {
   display: flex;
@@ -51,17 +50,30 @@ body {
   position: relative;
   z-index: 1;
   font-size: 1.54em;
-  padding-inline-end: 6em;
+  padding-inline-end: 4em;
   font-weight: 500;
 }
 .card__quotation {
   position: absolute;
-  right: 9em;
+  right: 2em;
+  top: 0;
 }
 .card__description {
   margin-inline-start: 2em;
   margin-block-start: 1em;
   margin-block-end: 2em;
-  padding-inline-end: 10em;
+  margin-inline-end: 10em;
   color: hsl(0deg, 0%, 81%);
+}
+
+.violet {
+  background-color: hsl(263deg, 55%, 52%);
+}
+
+.dark-gray {
+  background-color: hsl(217deg, 19%, 35%);
+}
+
+.dark-black {
+  background-color: hsl(219deg, 29%, 14%);
 }

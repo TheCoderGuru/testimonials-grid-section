@@ -32,7 +32,6 @@ body {
     width: fit-content;
     position: relative;
     margin-block-start: 5em;
-    background-color: $moderate-violet;
   &__flex {
     display: flex;
     gap: 1em;
@@ -65,21 +64,35 @@ body {
       position: relative;
       z-index: 1;
       font-size: 1.54em;
-      padding-inline-end: 6em;
+      padding-inline-end: 4em;
       font-weight: 500;
   }
 
   &__quotation{
       position: absolute;
-      right: 9em;
+      right: 2em;
+      top: 0;
   }
 
   &__description{
       margin-inline-start: 2em;
       margin-block-start: 1em;
       margin-block-end: 2em;
-      padding-inline-end: 10em;
+      margin-inline-end: 10em;
       color: $light-gray;
 
   }
+}
+
+
+.violet{
+  background-color: $moderate-violet;
+}
+
+.dark-gray{
+  background-color: $very-dark-grayish-blue;
+}
+
+.dark-black{
+  background-color: $very-dark-blackish-blue;
 }
