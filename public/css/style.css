@@ -113,7 +113,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .cards {
     display: grid;
-    grid-template-columns: repeat(4fr, 0.7fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .one {
@@ -130,5 +130,7 @@ body {
 
   .five {
     grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 }
