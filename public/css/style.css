@@ -113,6 +113,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .cards {
     display: grid;
+    width: min(70%, 70rem);
     grid-template-columns: repeat(4, 1fr);
   }
 
