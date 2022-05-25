@@ -26,11 +26,10 @@ body {
 }
 
 .card {
-  margin-inline: 2em;
+  margin-inline: 3em;
   border-radius: 0.6em;
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
   width: fit-content;
-  height: fit-content;
   position: relative;
   margin-block-start: 5em;
   &__flex {
@@ -59,13 +58,13 @@ body {
   }
 
   &__heading {
-    margin-inline-start: 1.5em;
+    margin-inline: 1.5em;
     margin-block-start: 1.2em;
     color: $white;
     position: relative;
     z-index: 1;
     font-size: 1.54em;
-    padding-inline-end: 4em;
+    // width: 12em;
     font-weight: 500;
   }
 
@@ -79,7 +78,7 @@ body {
     margin-inline-start: 2em;
     margin-block-start: 1em;
     margin-block-end: 2em;
-    margin-inline-end: 10em;
+    // width: 17em;
     color: $light-gray;
   }
 }
@@ -127,7 +126,6 @@ body {
 @media only screen and (min-width: 1440px) {
   .cards {
     display: grid;
-    width: min(70%, 70rem);
     grid-template-columns: repeat(4, 1fr);
   }
   .one{
@@ -146,5 +144,9 @@ body {
     grid-column: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+  }
+
+  .card__desciption{
+    height: auto;
   }
 }
